@@ -6,8 +6,8 @@ import { BsMicrosoft, BsNvidia, BsPaypal } from "react-icons/bs";
 
 function HeroSection() {
     return (
-        <section className="bg-[#0087A8] text-white text-center py-8 rounded-lg mx-12 my-6">
-            <div className="container mx-auto">
+        <section className="bg-[#0087A8] text-white text-center py-8 w-full px-4 sm:px-8 my-6">
+            <div className="w-full max-w-screen-xl mx-auto">
                 {/* Top Text */}
                 <p className="text-sm uppercase tracking-wide font-light">Meet Belancer Go <span className="bg-white text-[#0087A8] px-2 py-1 rounded-full text-xs ml-2">NEW</span></p>
 
@@ -18,7 +18,7 @@ function HeroSection() {
                 </h1>
 
                 {/* Search Bar */}
-                <div className="relative mt-6 w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto">
+                <div className="relative mt-6 w-full max-w-full md:max-w-lg mx-auto">
                     <input
                         type="text"
                         placeholder="Search for any service..."
