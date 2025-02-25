@@ -1,7 +1,9 @@
 import CategorySection from "../components/CategorySection";
+import CTASection from "../components/CTASection";
 import FeatureSection from "../components/FeatureSection";
 import Footer from "../components/Footer";
 import FreelancerServices from "../components/FreelancerServices";
+import GuidesSection from "../components/GuidesSection";
 import HeroSection from "../components/HeroSection";
 import MadeOnBelancer from "../components/MadeOnBelancer";
 import Navbar from "../components/Navbar";
@@ -20,6 +22,8 @@ function Home() {
             <RecommendedBadge />
             <FreelancerServices />
             <MadeOnBelancer />
+            <GuidesSection />
+            <CTASection />
             <Footer />
         </>
     );
