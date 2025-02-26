@@ -2,13 +2,13 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import website from '../assets/Carousel/website.png';
-import logo from '../assets/Carousel/logo.png';
-import seo from '../assets/Carousel/seo.png';
-import architecture from '../assets/Carousel/architecture.png';
-import voice from '../assets/Carousel/voice.png';
-import marketing from '../assets/Carousel/marketing.png';
-import video from '../assets/Carousel/video.png';
+import website from '../../assets/Carousel/website.png';
+import logo from '../../assets/Carousel/logo.png';
+import seo from '../../assets/Carousel/seo.png';
+import architecture from '../../assets/Carousel/architecture.png';
+import voice from '../../assets/Carousel/voice.png';
+import marketing from '../../assets/Carousel/marketing.png';
+import video from '../../assets/Carousel/video.png';
 
 // Service Data
 const services = [
@@ -54,7 +54,7 @@ const PopularServices = () => {
     };
 
     return (
-        <section className="container mx-auto my-10 px-4">
+        <section className="container mx-auto my-10 px-6 py-3">
             {/* Section Title with Montserrat Font */}
             <h2 className="text-3xl font-light text-gray-900 text-left mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                 Popular Services

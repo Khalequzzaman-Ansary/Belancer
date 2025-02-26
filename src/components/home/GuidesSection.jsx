@@ -1,7 +1,7 @@
 import React from "react";
-import help_1 from '../assets/Help_Section/help_section1.png';
-import help_2 from '../assets/Help_Section/help_section2.png';
-import help_3 from '../assets/Help_Section/help_section3.png';
+import help_1 from '../../assets/Help_Section/help_section1.png';
+import help_2 from '../../assets/Help_Section/help_section2.png';
+import help_3 from '../../assets/Help_Section/help_section3.png';
 
 const guides = [
     {

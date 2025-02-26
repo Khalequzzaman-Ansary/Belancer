@@ -1,14 +1,14 @@
-import CategorySection from "../components/CategorySection";
-import CTASection from "../components/CTASection";
-import FeatureSection from "../components/FeatureSection";
-import Footer from "../components/Footer";
-import FreelancerServices from "../components/FreelancerServices";
-import GuidesSection from "../components/GuidesSection";
-import HeroSection from "../components/HeroSection";
-import MadeOnBelancer from "../components/MadeOnBelancer";
-import Navbar from "../components/Navbar";
-import PopularServices from "../components/PopularServices";
-import RecommendedBadge from "../components/RecommendedBadge";
+import CategorySection from "../components/home/CategorySection";
+import CTASection from "../components/home/CTASection";
+import FeatureSection from "../components/home/FeatureSection";
+import Footer from "../components/home/Footer";
+import FreelancerServices from "../components/home/FreelancerServices";
+import GuidesSection from "../components/home/GuidesSection";
+import HeroSection from "../components/home/HeroSection";
+import MadeOnBelancer from "../components/home/MadeOnBelancer";
+import Navbar from "../components/home/Navbar";
+import PopularServices from "../components/home/PopularServices";
+import RecommendedBadge from "../components/home/RecommendedBadge";
 
 
 function Home() {

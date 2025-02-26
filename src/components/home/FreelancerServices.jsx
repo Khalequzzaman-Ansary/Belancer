@@ -1,13 +1,13 @@
 import React from "react";
-import three_d from '../assets/features_icons/3D.png';
-import logo from '../assets/features_icons/logo.png';
-import website from '../assets/features_icons/website.png';
-import marketing from '../assets/features_icons/marketing.png';
-import press from '../assets/features_icons/press.png';
-import categories from '../assets/services_icons/categories.png';
-import happy from '../assets/services_icons/happy.png';
-import matching from '../assets/services_icons/matching.png';
-import quickly from '../assets/services_icons/quickly.png';
+import three_d from '../../assets/features_icons/3D.png';
+import logo from '../../assets/features_icons/logo.png';
+import website from '../../assets/features_icons/website.png';
+import marketing from '../../assets/features_icons/marketing.png';
+import press from '../../assets/features_icons/press.png';
+import categories from '../../assets/services_icons/categories.png';
+import happy from '../../assets/services_icons/happy.png';
+import matching from '../../assets/services_icons/matching.png';
+import quickly from '../../assets/services_icons/quickly.png';
 
 // Sample service data (Replace icons with your local assets)
 const services = [

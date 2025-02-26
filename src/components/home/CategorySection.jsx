@@ -1,13 +1,13 @@
 import React from 'react';
-import programming from '../assets/programming.png'
-import graphics from '../assets/graphics.png'
-import digital_marketing from '../assets/digital_marketing.png'
-import translation from '../assets/translation.png'
-import video from '../assets/video.png'
-import ai from '../assets/ai.png'
-import music from '../assets/music.png'
-import business from '../assets/business.png'
-import consulting from '../assets/consulting.png'
+import programming from '../../assets/programming.png';
+import graphics from '../../assets/graphics.png';
+import digital_marketing from '../../assets/digital_marketing.png';
+import translation from '../../assets/translation.png';
+import video from '../../assets/video.png'
+import ai from '../../assets/ai.png'
+import music from '../../assets/music.png'
+import business from '../../assets/business.png'
+import consulting from '../../assets/consulting.png'
 
 const CategorySection = () => {
 
@@ -24,7 +24,7 @@ const CategorySection = () => {
     ];
 
     return (
-        <section className="container mx-auto my-10">
+        <section className="container mx-auto my-10 px-6 py-3">
 
             {/* Service Cards Grid */}
             <div className="flex justify-center gap-4 flex-wrap">

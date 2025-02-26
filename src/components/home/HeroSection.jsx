@@ -6,7 +6,7 @@ import { BsMicrosoft, BsNvidia, BsPaypal } from "react-icons/bs";
 
 function HeroSection() {
     return (
-        <section className="bg-[#0087A8] text-white text-center py-8 w-full px-4 sm:px-8 my-6">
+        <section className="bg-[#0087A8] text-white text-center container mx-auto px-6 py-16 sm:px-8 my-6 rounded-2xl">
             <div className="w-full max-w-screen-xl mx-auto">
                 {/* Top Text */}
                 <p className="text-sm uppercase tracking-wide font-light">Meet Belancer Go <span className="bg-white text-[#0087A8] px-2 py-1 rounded-full text-xs ml-2">NEW</span></p>
@@ -31,9 +31,9 @@ function HeroSection() {
 
                 {/* Trusted Brands Section */}
 
-                <div className="flex justify-center items-center gap-6 mt-6">
-                    <p className="text-gray-200 text-sm whitespace-nowrap">Trusted by:</p>
-                    <div className="flex gap-4 items-center">
+                <div className="flex justify-center items-center gap-6 mt-14">
+                    <p className="text-gray-200 font-normal italic whitespace-nowrap">Trusted by:</p>
+                    <div className="flex gap-5 items-center">
                         <p><FaMeta /></p>
                         <p><FaGoogle /></p>
                         <p><SiNetflix /></p>

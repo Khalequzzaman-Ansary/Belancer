@@ -1,10 +1,10 @@
 import React from 'react';
-import projectImage from "../assets/project/project_status.png";
-import checkIcon from "../assets/project/check.png";
+import projectImage from "../../assets/project/project_status.png";
+import checkIcon from "../../assets/project/check.png";
 
 const FeatureSection = () => {
     return (
-        <section className="bg-blue-100 my-12 rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center justify-between mx-auto max-w-6xl">
+        <section className="bg-blue-100 my-12 rounded-2xl flex flex-col md:flex-row items-center justify-between mx-auto w-full container p-20">
             {/* Left Content */}
             <div className="md:w-1/2 space-y-6">
                 {/* Heading */}

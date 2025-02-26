@@ -8,7 +8,7 @@ function Navbar() {
     const [language, setLanguage] = useState("English");
 
     return (
-        <nav className="bg-white shadow-md p-3">
+        <nav className="bg-white shadow-md container mx-auto px-6 py-3">
             <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center px-4">
                 {/* Left Side: Logo + Search Bar */}
                 <div className="flex items-center gap-4">
@@ -96,7 +96,7 @@ function Navbar() {
             )}
 
             {/* Second Row: Categories (Visible on large screens) */}
-            <div className="hidden md:flex container mx-auto mt-2 border-t pt-2 justify-center gap-6 text-gray-700 font-sans text-sm tracking-wide whitespace-nowrap overflow-x-auto">
+            <div className="hidden md:flex container mx-auto mt-2 border-t pt-2 justify-center gap-6 text-gray-700 font-sans text-xs tracking-wide whitespace-nowrap overflow-x-auto">
                 {[
                     "Graphics & Design",
                     "Programming & Tech",

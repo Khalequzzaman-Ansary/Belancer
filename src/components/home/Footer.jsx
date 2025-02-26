@@ -11,7 +11,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-gray-100 text-gray-800 py-10 px-6">
+        <footer className="bg-gray-100 text-gray-800 container mx-auto px-6 pt-16 pb-7">
             {/* Desktop Grid Layout */}
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-8">
 
@@ -50,7 +50,7 @@ const Footer = () => {
 
                 {/* Logo & Copyright */}
                 <div className="flex flex-col sm:flex-row items-center space-x-2">
-                    <span className="font-bold text-lg text-blue-600 text-2xl">Belancer</span>
+                    <span className="font-bold text-blue-600 text-2xl">Belancer</span>
                     <span className="text-gray-500">© Belancer International Ltd. 2025</span>
                 </div>
 
