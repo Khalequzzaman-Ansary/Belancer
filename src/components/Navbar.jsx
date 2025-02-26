@@ -29,7 +29,7 @@ function Navbar() {
 
                 {/* Right Side: Links and Buttons (Hidden on small screens) */}
                 <div className="hidden md:flex items-center gap-6">
-                    <Link to="#" className="hover:text-blue-600">Belancer Pro</Link>
+                    <Link to="/pro" className="hover:text-blue-600">Belancer Pro</Link>
 
                     {/* Expandable Explore Button */}
                     <div

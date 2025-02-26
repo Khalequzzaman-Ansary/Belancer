@@ -6,12 +6,17 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Pro from './pages/Pro.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
   },
+  {
+    path: '/pro',
+    element: <Pro></Pro>
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
