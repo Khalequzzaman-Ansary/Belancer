@@ -4,9 +4,9 @@ import checkIcon from "../../assets/project/check.png";
 
 const FeatureSection = () => {
     return (
-        <section className="bg-blue-100 my-12 rounded-2xl flex flex-col md:flex-row items-center justify-between mx-auto w-full container p-20">
+        <section className="bg-blue-100 my-12 rounded-2xl flex flex-col md:flex-row items-center justify-between mx-auto w-full container px-6">
             {/* Left Content */}
-            <div className="md:w-1/2 space-y-6">
+            <div className="md:w-1/2 p-16 space-y-6">
                 {/* Heading */}
                 <h2 className="text-3xl sm:text-4xl font-light text-gray-900 leading-tight">
                     The <span className="text-blue-500 font-semibold">premium</span> freelance solution for businesses

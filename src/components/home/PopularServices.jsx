@@ -61,21 +61,23 @@ const PopularServices = () => {
             </h2>
 
             {/* Carousel */}
-            <Slider {...settings}>
-                {services.map((service, index) => (
-                    <div key={index} className="px-2">
-                        <div className={`relative ${service.bgColor} text-white p-4 rounded-xl shadow-lg hover:shadow-xl transition duration-300 font-thin w-[200px] h-[240px] flex flex-col items-center justify-between`} style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                            {/* Service Name */}
-                            <h3 className="font-bold text-md text-center leading-tight">{service.name}</h3>
+            <div className='overflow-hidden pb-8'>
+                <Slider {...settings}>
+                    {services.map((service, index) => (
+                        <div key={index} className="px-2">
+                            <div className={`relative ${service.bgColor} text-white p-4 rounded-xl shadow-lg hover:shadow-xl transition duration-300 font-thin w-[200px] h-[240px] flex flex-col items-center justify-between`} style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                                {/* Service Name */}
+                                <h3 className="font-bold text-md text-center leading-tight">{service.name}</h3>
 
-                            {/* Service Image */}
-                            <div className="w-[150px] h-[120px] rounded-lg overflow-hidden flex items-center justify-center">
-                                <img src={service.img} alt={service.name} className="w-full h-full object-cover" />
+                                {/* Service Image */}
+                                <div className="w-[150px] h-[120px] rounded-lg overflow-hidden flex items-center justify-center">
+                                    <img src={service.img} alt={service.name} className="w-full h-full object-cover" />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
-            </Slider>
+                    ))}
+                </Slider>
+            </div>
         </section>
     );
 };

@@ -1,10 +1,13 @@
 import React from 'react';
+import Navbar from '../components/Pro/Navbar';
+import HeroSection from '../components/Pro/HeroSection';
 
 const Pro = () => {
     return (
-        <div>
-            <h3>This is Belancer Pro!</h3>
-        </div>
+        <>
+            <Navbar />
+            <HeroSection />
+        </>
     );
 };
 

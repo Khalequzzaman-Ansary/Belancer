@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { FaSearch, FaGlobe, FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
-    const [isExploreOpen, setIsExploreOpen] = useState(false);
+    const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+    const [isProductsOpen, setIsProductsOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [language, setLanguage] = useState("English");
 
@@ -12,33 +13,50 @@ function Navbar() {
             <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center px-4">
                 {/* Left Side: Logo + Search Bar */}
                 <div className="flex items-center gap-4">
-                    <Link to="/" className="text-2xl font-bold text-blue-600">Belancer</Link>
+                    <Link to="/" className="text-2xl font-bold text-blue-600">Belancer <span className="text-gray-900 text-2xl font-semibold">pro.</span></Link>
+
 
                     {/* Search Bar (Hidden on small screens) */}
                     <div className="relative hidden md:block">
                         <input
                             type="text"
-                            placeholder="What service are you looking for today?"
+                            placeholder="Search for any service..."
                             className="px-4 py-2 border rounded-lg w-96 focus:outline-none focus:ring-2 focus:ring-blue-400"
                         />
-                        <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-black text-white p-2 rounded-lg">
+                        <button className="absolute right-1 top-1/2 -translate-y-1/2 bg-black text-white p-2 rounded-lg">
                             <FaSearch />
                         </button>
                     </div>
                 </div>
 
                 {/* Right Side: Links and Buttons (Hidden on small screens) */}
-                <div className="hidden md:flex items-center text-sm gap-5">
-                    <Link to="/pro" className="hover:text-blue-600">Belancer Pro</Link>
+                <div className="hidden md:flex text-sm items-center gap-5">
+                    {/* Expandable Product Button */}
+                    <div className="relative cursor-pointer hover:text-blue-600"
+                        onMouseEnter={() => setIsProductsOpen(true)}
+                        onMouseLeave={() => setIsProductsOpen(false)}
+                    >
+                        Products <FaChevronDown className="inline ml-1 text-sm" />
+                        {isProductsOpen && (
+                            <div className="absolute top-6 left-0 bg-white shadow-lg border rounded-md w-48 py-2 z-50">
+                                <Link to="#" className="block px-4 py-2 hover:bg-gray-100">Trending</Link>
+                                <Link to="#" className="block px-4 py-2 hover:bg-gray-100">New Arrivals</Link>
+                                <Link to="#" className="block px-4 py-2 hover:bg-gray-100">Popular Services</Link>
+                                <Link to="#" className="block px-4 py-2 hover:bg-gray-100">Featured</Link>
+                            </div>
+                        )}
+                    </div>
+
+                    <Link>Plans</Link>
 
                     {/* Expandable Explore Button */}
                     <div
                         className="relative cursor-pointer hover:text-blue-600"
-                        onMouseEnter={() => setIsExploreOpen(true)}
-                        onMouseLeave={() => setIsExploreOpen(false)}
+                        onMouseEnter={() => setIsResourcesOpen(true)}
+                        onMouseLeave={() => setIsResourcesOpen(false)}
                     >
-                        Explore <FaChevronDown className="inline ml-1 text-sm" />
-                        {isExploreOpen && (
+                        Resources <FaChevronDown className="inline ml-1 text-sm" />
+                        {isResourcesOpen && (
                             <div className="absolute top-6 left-0 bg-white shadow-lg border rounded-md w-48 py-2 z-50">
                                 <Link to="#" className="block px-4 py-2 hover:bg-gray-100">Trending</Link>
                                 <Link to="#" className="block px-4 py-2 hover:bg-gray-100">New Arrivals</Link>
@@ -49,7 +67,8 @@ function Navbar() {
                     </div>
 
                     {/* Language Selector */}
-                    <Link to="#" className="hover:text-blue-600">Become a Seller</Link>
+
+                    <Link to="#" className="hover:text-blue-600">Become a Freelancer</Link>
                     <div className="flex items-center gap-1 cursor-pointer hover:text-blue-600">
                         <FaGlobe />
                         <span>{language}</span>
@@ -58,6 +77,7 @@ function Navbar() {
                     <Link to="#" className="border border-green-500 text-green-500 p-2 rounded-md hover:bg-green-500 hover:text-white">
                         Join
                     </Link>
+
                 </div>
 
                 {/* Hamburger Menu (Visible on small screens) */}
