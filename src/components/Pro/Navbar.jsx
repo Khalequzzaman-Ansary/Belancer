@@ -6,6 +6,7 @@ function Navbar() {
     const [isResourcesOpen, setIsResourcesOpen] = useState(false);
     const [isProductsOpen, setIsProductsOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isExploreOpen, setIsExploreOpen] = useState(false);
     const [language, setLanguage] = useState("English");
 
     return (
@@ -88,26 +89,26 @@ function Navbar() {
 
             {/* Mobile Menu (Hidden on large screens) */}
             {isMenuOpen && (
-                <div className="md:hidden bg-white shadow-md border-t">
-                    <div className="p-4 flex flex-col gap-4">
-                        <Link to="/pro" className="hover:text-blue-600">Belancer Pro</Link>
+                <div className="md:hidden bg-white shadow-md m-2 border-t">
+                    <div className="p-4 flex bg-cyan-600 text-white rounded-lg flex-col gap-4">
+                        <Link to="/pro" className="hover:text-black">Belancer Pro</Link>
                         <div
-                            className="cursor-pointer hover:text-blue-600"
+                            className="cursor-pointer hover:text-black"
                             onClick={() => setIsExploreOpen(!isExploreOpen)}
                         >
                             Explore <FaChevronDown className="inline ml-1 text-sm" />
                         </div>
                         {isExploreOpen && (
-                            <div className="pl-4 space-y-2">
+                            <div className="pl-4 space-y-2 border-white border-4">
                                 <Link to="/trending" className="block hover:text-blue-600">Trending</Link>
                                 <Link to="/new" className="block hover:text-blue-600">New Arrivals</Link>
                                 <Link to="/popular" className="block hover:text-blue-600">Popular Services</Link>
                                 <Link to="/featured" className="block hover:text-blue-600">Featured</Link>
                             </div>
                         )}
-                        <Link to="/seller" className="hover:text-blue-600">Become a Seller</Link>
-                        <Link to="/login" className="hover:text-blue-600">Sign In</Link>
-                        <Link to="/join" className="border border-green-500 text-green-500 px-4 py-2 rounded-full hover:bg-green-500 hover:text-white">
+                        <Link to="/seller" className="hover:text-black rounded-md">Become a Seller</Link>
+                        <Link to="/login" className="border border-white text-white text-center py-1 rounded-md hover:bg-sky-600 hover:text-white w-1/4">Sign In</Link>
+                        <Link to="/join" className="border border-white text-white text-center py-1 rounded-md hover:bg-sky-600 hover:text-white w-1/4">
                             Join
                         </Link>
                     </div>

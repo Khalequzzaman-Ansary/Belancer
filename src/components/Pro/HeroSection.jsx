@@ -54,9 +54,9 @@ const HeroSection = () => {
             </div>
 
             {/* Brands Section (Placeholder for Logos) */}
-            <div className="mt-10 w-full py-3 rounded-lg flex flex-wrap md:flex-nowrap items-center justify-between px-6">
+            <div className="mt-10  bg-cyan-600 w-full py-3 rounded-lg flex flex-wrap md:flex-nowrap items-center justify-between px-6">
                 {/* Left Side Text */}
-                <div className="text-white text-sm md:text-base font-normal">
+                <div className="text-white text-center font-normal">
                     Brands who hire with Belancer Pro
                 </div>
 
