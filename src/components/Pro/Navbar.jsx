@@ -89,24 +89,38 @@ function Navbar() {
 
             {/* Mobile Menu (Hidden on large screens) */}
             {isMenuOpen && (
-                <div className="md:hidden bg-white shadow-md m-2 border-t">
-                    <div className="p-4 flex bg-cyan-600 text-white rounded-lg flex-col gap-4">
-                        <Link to="/pro" className="hover:text-black">Belancer Pro</Link>
+                <div className="md:hidden rounded-lg bg-cyan-600 shadow-lg">
+                    <div className="p-4 flex text-white flex-col gap-4 m-2">
                         <div
                             className="cursor-pointer hover:text-black"
-                            onClick={() => setIsExploreOpen(!isExploreOpen)}
+                            onClick={() => setIsProductsOpen(!isProductsOpen)}
                         >
-                            Explore <FaChevronDown className="inline ml-1 text-sm" />
+                            Products <FaChevronDown className="inline ml-1 text-sm" />
                         </div>
-                        {isExploreOpen && (
-                            <div className="pl-4 space-y-2 border-white border-4">
-                                <Link to="/trending" className="block hover:text-blue-600">Trending</Link>
-                                <Link to="/new" className="block hover:text-blue-600">New Arrivals</Link>
-                                <Link to="/popular" className="block hover:text-blue-600">Popular Services</Link>
-                                <Link to="/featured" className="block hover:text-blue-600">Featured</Link>
+                        {isProductsOpen && (
+                            <div className="pl-4 space-y-2 border-white border-2 rounded-md p-2">
+                                <Link to="/trending" className="block hover:text-black">Trending</Link>
+                                <Link to="/new" className="block hover:text-black">New Arrivals</Link>
+                                <Link to="/popular" className="block hover:text-black">Popular Services</Link>
+                                <Link to="/featured" className="block hover:text-black">Featured</Link>
                             </div>
                         )}
-                        <Link to="/seller" className="hover:text-black rounded-md">Become a Seller</Link>
+                        <Link to="/pro" className="hover:text-black">Plans</Link>
+                        <div
+                            className="cursor-pointer hover:text-black"
+                            onClick={() => setIsResourcesOpen(!isResourcesOpen)}
+                        >
+                            Resources <FaChevronDown className="inline ml-1 text-sm" />
+                        </div>
+                        {isResourcesOpen && (
+                            <div className="pl-4 space-y-2 border-white border-2 rounded-md p-2">
+                                <Link to="/trending" className="block hover:text-black">Trending</Link>
+                                <Link to="/new" className="block hover:text-black">New Arrivals</Link>
+                                <Link to="/popular" className="block hover:text-black">Popular Services</Link>
+                                <Link to="/featured" className="block hover:text-black">Featured</Link>
+                            </div>
+                        )}
+                        <Link to="/seller" className="hover:text-black rounded-md">Become a Freelancer</Link>
                         <Link to="/login" className="border border-white text-white text-center py-1 rounded-md hover:bg-sky-600 hover:text-white w-1/4">Sign In</Link>
                         <Link to="/join" className="border border-white text-white text-center py-1 rounded-md hover:bg-sky-600 hover:text-white w-1/4">
                             Join

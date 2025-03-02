@@ -68,8 +68,8 @@ function Navbar() {
 
             {/* Mobile Menu (Hidden on large screens) */}
             {isMenuOpen && (
-                <div className="md:hidden bg-white shadow-md border-t">
-                    <div className="p-4 flex flex-col gap-4">
+                <div className="md:hidde rounded-lg bg-cyan-600 shadow-lg">
+                    <div className="p-4 flex flex-col text-white gap-4 m-2">
                         <Link to="/pro" className="hover:text-blue-600">Belancer Pro</Link>
                         <div
                             className="cursor-pointer hover:text-blue-600"
@@ -86,8 +86,8 @@ function Navbar() {
                             </div>
                         )}
                         <Link to="/seller" className="hover:text-blue-600">Become a Seller</Link>
-                        <Link to="/login" className="hover:text-blue-600">Sign In</Link>
-                        <Link to="/join" className="border border-green-500 text-green-500 px-4 py-2 rounded-full hover:bg-green-500 hover:text-white">
+                        <Link to="/login" className="border border-white text-white text-center py-1 rounded-md hover:bg-sky-600 hover:text-white w-1/4">Sign In</Link>
+                        <Link to="/join" className="border border-white text-white text-center py-1 rounded-md hover:bg-sky-600 hover:text-white w-1/4">
                             Join
                         </Link>
                     </div>
