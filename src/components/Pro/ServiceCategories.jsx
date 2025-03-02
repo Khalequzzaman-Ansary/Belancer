@@ -1,26 +1,32 @@
 import React from "react";
+import AIChatbots from '../../assets/Pro/ServiceCategory/AIChatbots.png';
+import E_Commerce from '../../assets/Pro/ServiceCategory/E-Commerce.png';
+import SEO from '../../assets/Pro/ServiceCategory/SEO.png';
+import UI_UX from '../../assets/Pro/ServiceCategory/UI_UX.png';
+import Video_Animation from '../../assets/Pro/ServiceCategory/Video_Animation.png';
+import Website from '../../assets/Pro/ServiceCategory/Website.png';
 
 const categories = [
-    { title: "UI / UX", image: "/images/ui-ux.png" },
-    { title: "Website Development", image: "/images/web-dev.png" },
-    { title: "SEO", image: "/images/seo.png" },
-    { title: "Video & Animation", image: "/images/video-animation.png" },
-    { title: "E-Commerce", image: "/images/ecommerce.png" },
-    { title: "AI & Chatbots", image: "/images/ai-chatbots.png" },
+    { title: "UI / UX", image: UI_UX },
+    { title: "Website Development", image: Website },
+    { title: "SEO", image: SEO },
+    { title: "Video & Animation", image: Video_Animation },
+    { title: "E-Commerce", image: E_Commerce },
+    { title: "AI & Chatbots", image: AIChatbots },
 ];
 
 const ServiceCategories = () => {
     return (
-        <div className="w-full px-4 py-6">
-            {/* Mobile View: Scrollable */}
-            <div className="flex space-x-4 overflow-x-auto md:hidden scrollbar-hide">
+        <div className="w-full px-5 py-8">
+            {/* Mobile View: 2 rows, 3 columns */}
+            <div className="grid grid-cols-3 gap-4 md:hidden">
                 {categories.map((category, index) => (
                     <div
                         key={index}
-                        className="flex flex-col items-center bg-white shadow-md rounded-xl p-4 min-w-[160px] hover:scale-105 transition-transform"
+                        className="flex flex-col items-center bg-white shadow-lg rounded-xl p-4 hover:scale-105 transition-transform"
                     >
                         <img src={category.image} alt={category.title} className="w-16 h-16 object-contain" />
-                        <p className="mt-2 text-sm font-medium text-gray-700">{category.title}</p>
+                        <p className="mt-2 text-xs font-medium text-gray-700">{category.title}</p>
                     </div>
                 ))}
             </div>

@@ -74,8 +74,8 @@ function Navbar() {
                         <FaGlobe />
                         <span>{language}</span>
                     </div>
-                    <Link to="#" className="hover:text-blue-600">Sign In</Link>
-                    <Link to="#" className="border border-green-500 text-green-500 p-2 rounded-md hover:bg-green-500 hover:text-white">
+                    <Link to="#" className="hover:bg-black hover:text-white border border-black px-2 py-1 rounded-md">Sign In</Link>
+                    <Link to="#" className="border border-green-500 text-green-500 px-2 py-1 rounded-md hover:bg-green-500 hover:text-white">
                         Join
                     </Link>
 
