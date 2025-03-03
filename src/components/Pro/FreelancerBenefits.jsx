@@ -49,7 +49,7 @@ const FreelancerBenefits = () => {
                 {benefits.map((benefit, index) => (
                     <div
                         key={index}
-                        className="bg-white shadow-md rounded-xl p-6 hover:scale-105 transition-transform"
+                        className="bg-white shadow-lg rounded-xl p-6 hover:scale-105 transition-transform"
                     >
                         <h3 className="text-lg font-semibold">{benefit.title}</h3>
                         <p className="text-gray-600 mt-2">{benefit.description}</p>
@@ -86,7 +86,13 @@ const FreelancerBenefits = () => {
                         {openIndex === index && (
                             <div className="mt-2 text-gray-600">
                                 <p>{benefit.description}</p>
-                                <p>{benefit.image}</p>
+                                <div className="mt-4">
+                                    <img
+                                        src={benefit.image}
+                                        alt={benefit.alt}
+                                        className="w-full h-40 object-contain rounded-lg"
+                                    />
+                                </div>
                             </div>
                         )}
                     </div>
@@ -94,8 +100,8 @@ const FreelancerBenefits = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="flex justify-center mt-8">
-                <button className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+            <div className="flex justify-center mt-12">
+                <button className="bg-black text-white px-6 py-2 rounded-lg font-normal hover:bg-gray-800 transition">
                     Get Started with Belancer Pro
                 </button>
             </div>

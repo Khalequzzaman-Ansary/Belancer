@@ -11,7 +11,7 @@ function Navbar() {
 
     return (
         <nav className="bg-white shadow-md container mx-auto px-6 py-3">
-            <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center px-4">
+            <div className="w-full mx-auto flex justify-between items-center px-4">
                 {/* Left Side: Logo + Search Bar */}
                 <div className="flex items-center gap-4">
                     <Link to="/" className="text-2xl font-bold text-blue-600">Belancer <span className="text-gray-900 text-2xl font-semibold">pro.</span></Link>
